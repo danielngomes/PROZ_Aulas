@@ -1,0 +1,39 @@
+a{
+    color: crimson;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-size-adjust: 40px;
+}
+
+#ultima-caixa {
+    background-color: green;
+}
+
+.caixa a {
+    background-color: gainsboro;
+}
+
+.caixa {
+    background-color: yellow;
+}
+
+div a{
+    background-color: pink;
+}
+
+div {
+    background-color: blue;
+}
+
+p a {
+    background-color: white;
+}
+
+p {
+    background-color: gray;
+}
