@@ -1,0 +1,20 @@
+* {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.header_container {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.header_nav {
+  display: flex;
+  gap: 15px;
+}
+
+.header_nav_item:hover, a:hover {
+  scale: 1.10;
+  color: white
+}
