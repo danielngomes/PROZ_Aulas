@@ -11,18 +11,24 @@
 <body>
   <main>
     <section id="login">
-      <h2>Login</h2>
+      <h2 class="title">Login</h2>
       <form action="">
         <label for="login-usuario">Nome de usuário:</label>
-        <input type="text" id="login-usuario" name="login-usuario" class="">
+        <input onchange="validateUsername()" type="text" id="login-usuario" name="login-usuario" class="">
         <p class="error-text">*Usuário inválido</p>
 
         <label for="login-senha">Senha:</label>
-        <input type="password" id="login-senha" name="login-senha" class="">
-        <p class="error-text">*Sennha incorreta</p>
+        <input onchange="validatePasswd()" type="password" id="login-senha" name="login-senha" class="">
+        <p class="error-text">*Senha incorreta</p>
 
-        <button type="button">Fazer login</button>
+        <button onclick="showSuccessMsg()" type="button">Fazer login</button>
       </form>
+      <div class="success-message">
+        <p>Obrigado por logar!</p>
+      </div>
+      <div class="success-message">
+        <p>Dados incorretos!</p>
+      </div>
     </section>
   </main>
 </body>
