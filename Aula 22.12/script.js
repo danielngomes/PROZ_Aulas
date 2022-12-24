@@ -3,6 +3,7 @@ const errorText = document.getElementsByClassName('error-text')
 const usernameInput = document.getElementById('login-usuario')
 const passwdInput = document.getElementById('login-senha')
 const successMsg = document.getElementsByClassName('success-message')
+const failMsg = document.getElementsByClassName('fail-message')
 
 title[0].style.color = 'red';
 
@@ -37,12 +38,12 @@ function validatePasswd() {
 /* Função que serve para mostrar uma mensagem de validação ao clicar no botão de login, 
 mudando a mensagem caso esteja algo certo ou errado, usei o toggle para adicionar e remover a mensagem clicando no botão 
 e o remove para não mostrar caso não seja necessário */
-function showSuccessMsg () {
+function showValidateMsg () {
     if (usernameInput.value == 'daniel' && passwdInput.value == '123'){
         successMsg[0].classList.toggle('visible')
-        successMsg[1].classList.remove('visible')
+        failMsg[0].classList.remove('visible')
     } else {
         successMsg[0].classList.remove('visible')
-        successMsg[1].classList.toggle('visible')
+        failMsg[0].classList.toggle('visible')
     }    
 }
