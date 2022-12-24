@@ -19,6 +19,9 @@ main {
 
 section {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 form {
@@ -57,6 +60,20 @@ input.error {
 input.correct {
   background-color: #BBCCBB;
   color: #206620;
+}
+
+.success-message {
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  background-color: purple;
+  color: white;
+  display: none;
+  border-radius: 24px;
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  gap: 20px;  
 }
 
 .error-text {
